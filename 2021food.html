@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Trending Food Of 2021 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="assets/x-icon" href="assets/2021 REWIND!.png">
+        <style>
+            .name{
+                text-align:center;
+            }
+        </style>
+        <link rel="icon" type="image/x-icon" href="logo2.ico">
+        <!-- <a href="index.html"><img src="data:image/png;base64,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"></a> -->
+        <div class="main-nav-links">  
+            <i onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="2021food.html">FOOD</a></li>
+                <li><a href="2021video.html">VIDEO</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="news.html">NEWS</a></li>
+            </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <link rel="stylesheet" href="foodStyles.css"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </head>
+    
+    
+    <div class="header">
+         <h1>Trending Food Of 2021 </h1> 
+    </div>
+    </section>
+    <body>
+    <center>
+        <lottie-player class = 'bear' src="https://assets9.lottiefiles.com/packages/lf20_lbxov9bj.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        <p class='welcome' style="text-align: center;"><i>Welcome to the throwback of the viral Food we saw in 2021!</i></p> 
+        <div class='marquee'>   
+            <p>Hope You Will Have Fun In Here!!!</p>
+        </div>
+        <br>
+        <div class="nav-links">  
+            <i onclick="hideMenu()"></i>
+            <ul class="topnav">
+                <li><a href="#tacobell">| Tacobell |</a></li>
+                <li><a href="#dalgona">| Dalgona Candy |</a> </li>
+                <li><a href="#cakoi">| Cakoi Viral |</a></li>
+                <li><a href="#tortilla">| Wrap |</a></li>
+            </ul>
+        </div>
+        <center><h1 id="tacobell" class="font2">Tacobell</h1></center>
+        <p class="font1">Have you heard about Tacobell? I bet you have! So for those who didn't know, Tacobell is a well-known and established American fast food chain, originated from California which specialised themselves in selling taco. By 2019, this restaurant had already over 7000 restaurants around the globe, serving more than 2 billion customers anually. Earlier this year, Tacobell had annouce the launching of it first branch in Malaysia located at Cyberjaya - 3.4 km away (or 7 min drive) from Multimedia University (MMU)</p>
+            <center>
+                <style>
+                img{
+                    border-radius: 8px;
+                 }
+                img:hover {transform: scaleX(-1);}
+                </style>
+                <img src="assets/tb1.jpg" width=75% alt="One of Taco Menu at Tacobell Malaysia"><br>
+                <a href="https://tacobell.com.my/"><i>Credit: Tacobell Malaysia</i></a> 
+            </center>
+        <p class="font1">There are a number of menu choise waiting for you but according to food reviewer like The Vocket, there are several that you definitely should put on the top of your checklist and these include their crunchy <b>Taco Supreme Combo</b>, aromatic and flovourful <b>Bell Rice Bowl</b> and multiple delicious <b>wrap, quesadilla and burrito</b> selection </p>
+        <hr>
+       <center> <h1 id="dalgona" class="font2">Dalgona Candy</h1></center>
+            <p class="font1">Gaining it's popularity from this year most watched Netflix's series, Squid Game, Dalgona Candy fame can be seen directly rising significantly among global community worlwide. This candy appear in the second challange of the game which is Honeycomb Game where the contestant need to delicately and carefully try to carve out the shape on the candy using nothing less that a needle or they will face fatality when they are failed to complete the task successfully.</p>
+            <center>
+            <img src="assets/dalgona1.gif" width=75%>
+            </center>
+            <p class="font1">This Korean streat treat is basicly a mixture of caramel and baking powder cooked on a stove which eventually formed a fluffy, bubbly mixture. The mixture is then pressed on to create a disk shape cookie and a template is put on the semi-harden candy afterward to makes a shape on it, creatng it's significant and distinguished look like we saw on the series.</p>
+            <center>
+                <style>
+                    img{
+                        border-radius: 8px;
+                     }
+                    </style>
+                <img src="assets/dalgona.jpg" width=75% alt="Dalgona Candy"> <br>
+                <a href="https://www.reuters.com/business/media-telecom/seller-basks-squid-game-fame-his-sweet-deadly-treat-2021-10-01/"><i>Credit: Reuters</i></a>
+            </center>
+            <hr>
+        <center><h1 id="cakoi" class="font2">Viral Assorted Topping Cakoi</h1></center>
+            <p class="font1"> Cakoi- a long, golden brown fried dough is indeed one of an iconic food we have in Malaysia. It is an Chinese dishes which usually is eaten at breakfast or during tea time. Traditionally, this crunchy yet fluffy dough is served with few condiments including kaya, <i>sambal belacan</i> or peanut sauce. However, recently we can see that there are some creative sellers who take a turn on this local delicacy in such a unique way. One of them is RR Cakoi, a cakoi vendor who establish in Johor Bharu and now even have a few branches located at Setiawangsa and Melawati, Kuala Lumpur.</p>
+                <center> 
+                <img src="assets/c1.jpg" width=75% alt="Viral Various Flavourful Cakoi">
+                <br>
+                <a href="https://www.thevocket.com/antara-18-topping-di-rr-cakoi-mana-satu-paling-best/" style="text-align: center;"><i>Credit: The Vocket</i></a>
+                </center>
+            <p class="font1">How it is different from the usual cakoi we casually have? Well, this scrumptious cakoi is covered in generous amount of topping on top of it, making it looked like various type of donuts we could usually get from Big Apple. There are a vast of flavour to choose from-18 in total, and a few of them that you must try are:</p>  
+            
+            <h3 class="font1"> 
+                <div>
+                    <ul style="list-style-position: inside; list-style-image: 
+                    url(https://icons.iconarchive.com/icons/icons8/ios7/16/Food-Cutlery-icon.png)">
+                        <li>Chocolate Biscoff</li>
+                        <li>Peanut Butter Oreo</li>
+                        <li>Cheese Mayonaise</li>
+                        <li>Cheese Chocolate</li>
+                        <li>Spicy Chicken Floss</li>
+                        <li>Cinnamon Sugar</li>
+                     </ul>
+                </div>
+                 
+            </h3>     
+                <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UUG3BwKZyc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </center>
+            <hr>
+       <center> <h1 id="tortilla" class="font2">Tortilla Wrap Hack</h1></center>
+            <p class="font1">Who do not like a simple and easy dishes that taste great right? So, this tortilla wrap hack that started to be shared on Tiktok had been viral within this year for it's easy-to-follow steps, flavourful taste and also it's convient customizability. </p>
+                <center>
+                    <img src="assets/t1.jpg" width=75% alt="Viral Tiktok Tortilla Wrap"> <br>
+                    <a href="https://helloyummy.co/tiktok-tortilla-wrap-hack/"><i>Credit: Hello,Yummy!</i></a>
+                </center>
+            
+            <p class="font1">To make this wonderful dish, there are literally 4 steps that you'll need to do.</p> 
+
+        <h3 class="font1">
+            <ol type="1" style="list-style-position: inside;">
+                <li >Make a cut halfway down the tortilla</li>
+                <li>Fill the 4 sides of the tortilla with your favourite filling i.e proteins or even veggies</li>
+                <li>Wrap the tortilla sides from the bottom until you reached the final side</li>
+                <li>Cook it on a pan until you see those tortilla wrap turns a little brown and chrunchy</li>
+                <li>Annnnnd, you basicly <b>DONE!</b>, Enjoy your food!</li>
+            </ol> 
+        </h3>
+
+            <p class="font1">
+            There are also some who took a twist with making a sweet version of the wrap and yes, it turns out to be great (and looks yummy too!)</p>
+                <center> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jjmjVJ_MLbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+                </center>
+            <hr>
+
+        </center>    
+        </body>
+        <footer style="text-align: center; margin:20px;">
+            <div class="nav-links">  
+                <i onclick="hideMenu()"></i>
+                <ul class="topnav">
+                    <li><a href="#tacobell">| Tacobell |</a></li>
+                    <li><a href="#dalgona">| Dalgona Candy |</a> </li>
+                    <li><a href="#cakoi">| Cakoi Viral |</a></li>
+                    <li><a href="#tortilla">| Wrap |</a></li>
+                </ul>
+            </div>
+            <adress class="footer">
+                <h4>CREATED BY</h4> <hr>
+                <p>HTML: MOHD AZRIY AKMALHAZIM BIN MOHD NAZARIEE
+                    <br>CSS: NUR FARAHIYA AIDA BINTI ABD RAZAK</p>     
+            </adress> 
+
+        </footer>
+        
+</html>

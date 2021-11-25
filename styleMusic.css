@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html body{
+    background-color: rgba(213,244,230,.4)
+}
+
+.content-section{
+    margin: 2em;
+}
+
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header{
+    text-align: center;
+    padding: 1em;
+    font-size: 20px;
+}
+
+.section-header li{
+    padding-top: 4px;
+}
+
+.section-header a:link{
+    color: #618685;
+}
+
+.section-header a:visited{
+    color:#618685;
+}
+
+.section-header li a:hover{
+    background-color: mediumturquoise;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+}
+
+.title{
+    font-size: 35px;
+    padding: 2%;
+    text-align: center;
+    font-weight: bolder; 
+}
+
+#image1{
+    display: block;
+    margin-left: 9%;
+}
+
+.image-all{
+    border-radius: 8px;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    
+}
+
+.footer div h4{
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    padding-bottom: 1%;
+}
+
+.footer img{
+    padding-top: 1%;
+}
+.header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://image.shutterstock.com/image-photo/colorful-smoke-on-dark-background-260nw-569530480.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 135px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links a:hover{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: lightblue;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+    padding-top: 10%;
+}
+.text-box p{
+    margin: 20px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+@media(max-width: 700px)
+{
+   .nav-links ul li
+    {
+        display: block;
+    }
+    .nav-links
+    {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer; 
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 15px;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
